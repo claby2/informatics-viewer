@@ -1,8 +1,5 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
 
 body {
     margin: 0 !important;
@@ -10,4 +7,151 @@ body {
     scroll-behavior: smooth;
     background-color: #DDDDDD;
     user-select: none !important;
+    font-family: 'Karla', sans-serif !important;
+}
+
+/* navbar */
+
+.navbar{
+  position: absolute;
+  display: flex;
+  background-image: linear-gradient(#3034A0, #6D70C6);
+  padding-bottom: 10px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 12px;
+  padding-bottom: 70px;
+}
+
+.navbar-elements{
+  position: absolute;
+  display: flex;
+  width: 60vw;
+}
+
+.logo {
+  color: #FAFAFA;
+  font-size: 2.5em;
+  font-weight: 500;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+}
+
+.menu a{
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #FAFAFA;
+  text-decoration: none;
+  margin-left: 2.5vw;
+  transition: 0.15s;
+}
+
+.menu a:hover{
+}
+
+#main-section{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+
+#problemClass{
+  margin-top: 120px;
+}
+
+.problemCon{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #FFFFFF;
+  margin: 0 0 1vh 0;
+  width: 20vw;
+  height: auto;
+  padding: 0 0.5vw 0 0.5vw;
+  transition: 0.1s;
+  padding-top: 1vh;
+}
+
+.problemCon:hover{
+}
+
+.problemCon h3{
+  margin: 0 0 0 0;
+
+}
+
+.problemCon h4{
+  font-weight: 400;
+  margin: 0 0 3vh 0;
+}
+
+.problemCon a{
+  color: #4878A0;
+  text-decoration: none;
+  width: auto;
+  margin-bottom: 1vh;
+}
+
+#assignments{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #FFFFFF;
+  margin: 1vh 0 1vh 0;
+  width: 20vw;
+  height: 50vh;
+  padding: 1vh 0.5vw 0 0.5vw;
+  transition: 0.1s;
+  margin-top: 120px;
+  right: 0;
+}
+
+#assignments h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1vh;
+}
+
+@media(max-width: 800px){
+  #main-section{
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+
+  #assignments{
+    width: 80vw;
+    padding: 1vh 1vw 0 1vw;
+  }
+
+  #assignments p{
+    margin: 0.5vh 0 0.5vh 0;
+  }
+
+  .problemCon{
+    width: 80vw;
+    padding: 1vh 1vw 0 1vw;
+  }
+
+  #problemClass{
+    margin: 5vh;
+  }
 }
