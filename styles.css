@@ -75,8 +75,10 @@ body {
 }
 
 .problemCon{
+  color: #000000;
+  text-decoration: none;
   border-radius: 10px;
-  display: flex;
+  display: block;
   flex-direction: column;
   position: relative;
   background-color: #FFFFFF;
@@ -106,6 +108,10 @@ body {
   text-decoration: none;
   width: auto;
   margin-bottom: 1vh;
+}
+
+.problemCon a:hover{
+    text-decoration: underline;
 }
 
 #assignments{

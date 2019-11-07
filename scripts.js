@@ -44,8 +44,10 @@ function displayProblems (){
             url.innerText = "Link";
 
 
-            let div = document.createElement('div');
+            let div = document.createElement('a');
             div.className = "problemCon";
+            div.href = "https://atcoder.jp/contests/" + e.contest_id + "/tasks/" + e.id;
+            div.target = "_Blank";
 
             div.appendChild(problem);
             div.appendChild(id);
